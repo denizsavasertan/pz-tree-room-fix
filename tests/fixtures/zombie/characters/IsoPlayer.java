@@ -1,0 +1,1 @@
+package zombie.characters; public class IsoPlayer { public boolean inside; public zombie.iso.IsoGridSquare square; public boolean isInARoom(){return inside;} public zombie.iso.IsoGridSquare getSquare(){return square;} }

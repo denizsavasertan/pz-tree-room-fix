@@ -1,0 +1,21 @@
+{
+  ".gitignore": "bf14e394c32d4d7c288ef6cab5138f10e32d650bc426c9bb3f34b6c1c56f37f2",
+  "Build-Test.ps1": "cf6f28745f96cd4f7eea4ef026888c5a2b7bbdf65186878ec22485aad4073545",
+  "Install.cmd": "9556e70e6893ceb95b84b2a096924060ff9bf5ba8a6179cc35028d5d84af057c",
+  "KULLANIM.txt": "c77729c7f1d13e370c761f6e07b2e1de2749c5b1be12c9f538f9bd7dbc9e1007",
+  "Manage-TreeFix.ps1": "0899ac2ba0f221516753181f1e7ecdc8c7c532f50888d512da86cf60f0d5c3a2",
+  "patcher.jar": "dc3cc17a280c8f32a194f1315dd9e6e713c8d130e8dd0a228ec0b649c9374ef8",
+  "README.md": "9dad7ffb6d35a814fd9c44afcb6eca9bf1a14da7021dc7fa6d8757eacf46b4f7",
+  "Remove.cmd": "82f17bb6a40fe7a8503a78cf9501a664050edacf65e7594d1c3d22586f9151dd",
+  "Status.cmd": "c1611d4408cd9e1b1f8221ac4f87d1ce70965478e6359ed0ab815f166cada791",
+  "lib/asm-9.8.jar": "876eab6a83daecad5ca67eb9fcabb063c97b5aeb8cf1fca7a989ecde17522051",
+  "lib/asm-tree-9.8.jar": "14b7880cb7c85eed101e2710432fc3ffb83275532a6a894dc4c4095d49ad59f1",
+  "lib/LICENSE-ASM.txt": "3523cb1759c6d74837be469fb0b039d8efe44bbe2acadb853849da9f6f07d4ea",
+  "src/TreePatcher.java": "ebcf40a5de30ca194154b045acc87a21f24215f53eab0aee62b9641055de986d",
+  "tests/TreeBehaviorTest.java": "7b3132227429c7eb3363f8589ef79076e78f4777989503c498fa9486ef9cc693",
+  "tests/fixtures/zombie/characters/IsoPlayer.java": "5712b50e51029976dd1f42276ac73cd48ea3e75a22c7fedb98cb5629decc66f7",
+  "tests/fixtures/zombie/iso/IsoCamera.java": "3434d5de0f83797df4a2db63e708e7314346d698f492a0318adf6478521fe8c9",
+  "tests/fixtures/zombie/iso/IsoGridSquare.java": "2ca152f114bb9f1ee4249b1b21723472d6ec31b71176bd731c86ce91203a5cd2",
+  "tests/fixtures/zombie/iso/areas/IsoRoom.java": "fcba08a3132c828bd8db02ad5fbf6fac07efcba46dbbd90a0caeb5b91dfee9e9",
+  "tests/fixtures/zombie/iso/objects/IsoTree.java": "52cf2a56a0c6ff15ae354bd689369dcafd4bd5740be7dd14421a25e174e37594"
+}

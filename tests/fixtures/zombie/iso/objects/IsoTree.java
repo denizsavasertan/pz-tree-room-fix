@@ -1,0 +1,1 @@
+package zombie.iso.objects; public class IsoTree { public zombie.iso.IsoGridSquare square; }

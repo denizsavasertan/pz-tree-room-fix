@@ -1,0 +1,1 @@
+package zombie.iso.areas; public class IsoRoom { public java.awt.Rectangle getRectsBounds(){return new java.awt.Rectangle(10,10,10,10);} }

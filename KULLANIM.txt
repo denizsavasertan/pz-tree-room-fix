@@ -1,0 +1,36 @@
+﻿TreeRoomFix - 42.21.0 istemci yamasi
+
+Oyun kapaliyken ZIP dosyasini tamamen cikarin ve Install.cmd calistirin.
+Status.cmd kurulumu kontrol eder. Remove.cmd yamayi geri alir.
+Varsayilan yol: C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid
+Farkli konum icin:
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Manage-TreeFix.ps1 -Action Install -GameDir "D:\SteamLibrary\steamapps\common\ProjectZomboid"
+
+Oda nesnesi varsa mevcut geometri hesabi aynen korunur. Oyuncu iceride
+sayildigi halde oda nesnesi yoksa oyunun mevcut 24 karelik mesafe testi
+kullanilir. Bu, gorunurluk icin bir alternatif davranistir; oda verisini onarmaz.
+Dunya veya sunucu verisini degistirmez. Sunucuya kurulum yapilmaz.
+
+Orijinal projectzomboid.jar degistirilmez. zombie\iso\objects\IsoTree.class
+olusturulur; .tree-room-null-fix altinda kurulum kaydi tutulur.
+Tam sinif SHA-256 kontrolu yapilir; farkli surum veya mevcut override reddedilir.
+Kumes yamasindan bagimsizdir. Diger runtime Java yamalariyla uyumluluk ve
+sunucunun yamayi kabul etmesi canli test edilmedi.
+
+Oyun guncellemesinden ONCE Remove.cmd calistirin. Steam dogrulamasi eklenen
+class dosyasini silmeyebilir. Status.cmd arsiv degisikligini kontrol eder;
+otomatik acilis denetimi yoktur. Guncellemeden sonra eski yamayi zorlamayin.
+
+TEST: Gercek oyun metodu ve gercek mesafe metodu, izole bagimliliklarla
+calistirildi. Orijinal null oda hatasi tekrarlandi. Yamali dokuz senaryo
+-Xverify:all ile gecti: disarida, normal oda sinirlari, eksik oda ve mesafe
+sinirlari. Kurulum/geri alma, farkli dosyayi koruma ve uyumsuz surum reddi gecti.
+Kullanici 16 Ekim 2026 tarihinde kendi MP istemcisinde zoom sorununun
+duzeldigini bildirdi. Diger sunucu ve mod kombinasyonlari test edilmedi.
+
+CANLI TEST: Evin icinde ayni yerde durup hatayi veren zoom seviyesine gecin.
+Sahnenin kaybolmamasi ve yeni IsoTree.isPlayerInsideARoom istisnasi
+olusmamasi beklenir. Agac saydamligini da kontrol edin. Sorun varsa oyunu
+kapatip Remove.cmd calistirin ve o denemenin console.txt dosyasini paylasin.
+
+Kaynak src/TreePatcher.java; ASM 9.8 lisansi lib/LICENSE-ASM.txt.

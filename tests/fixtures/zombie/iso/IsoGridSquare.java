@@ -1,0 +1,1 @@
+package zombie.iso; public class IsoGridSquare { public int x,y; public zombie.iso.areas.IsoRoom room; public zombie.iso.areas.IsoRoom getRoom(){return room;} }
